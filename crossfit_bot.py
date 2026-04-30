@@ -7,8 +7,9 @@ from datetime import datetime
 # ================================
 # 설정 (본인 정보로 교체하세요)
 # ================================
-TOKEN = "8675538197:AAE-lmEK5jHhXDI3kqDAE0KFIsfo-u0-lrc"   # BotFather에서 재발급받은 토큰
-CHAT_ID = "1793267160"
+import os
+TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 URL = "https://www.crossfit.com/essentials"
 SEEN_FILE = "seen_posts.json"      # 이전에 본 글 목록 저장 파일
 
