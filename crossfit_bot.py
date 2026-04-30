@@ -56,7 +56,7 @@ def send_message(text):
             "disable_web_page_preview": False
         }
     )
-
+ print(r.json())  # ← 이 줄 추가
 # ================================
 # 메인 실행
 # ================================
